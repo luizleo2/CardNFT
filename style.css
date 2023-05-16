@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --SoftBlue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    --mainBG: hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+
+    --ff: 'Outfit', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--mainBG);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background:var(--line);
+    width: 300px;  
+}
+
+.imgNft{
+    display: flex;
+    justify-content: center;
+}
+
+.imgNft img{
+    max-width: 300px;
+    max-height: 270px; 
+    padding-top: 10px; 
+}
+
+.card h1{
+    font-family: var(--ff);
+    color: var(--White);
+    
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.card p {
+    color: whitesmoke;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.card h3 {
+    display: flex;
+    flex-direction:row;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    gap: 10px;
+
+    font-family: var(--ff);
+    color: aqua;
+    
+}
+
+.card span{
+    padding-left: 30px;
+    font-family: var(--ff);
+    color: grey;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid grey;
+    height: 2px;
+    width: 200px;
+    
+}
+
+footer img { 
+}
+
+footer {
+    height: 10vh;
+    padding-left: 20px;
+    padding-top: 15px;
+    
+    display: flex;
+    flex-direction: row;
+}
+
