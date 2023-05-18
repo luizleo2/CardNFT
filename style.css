@@ -27,19 +27,26 @@ body {
 }
 
 .card {
-    background:var(--line);
+    background:var(--cardBG);
     width: 300px;  
+    border-radius: 10px;
+    box-shadow: 0 0  25px 10px black,
+    5px 5px 10px grey;
 }
 
 .imgNft{
     display: flex;
     justify-content: center;
+    
 }
 
 .imgNft img{
-    max-width: 300px;
+    max-width: auto;
     max-height: 270px; 
-    padding-top: 10px; 
+    padding-top: 10px;
+    margin-top: 10px; 
+    border-radius: 15px;
+    /* box-shadow:  inset 1px 1px black; */
 }
 
 .card h1{
@@ -54,44 +61,75 @@ body {
     color: whitesmoke;
     padding-left: 20px;
     padding-top: 15px;
+    font-family: var(--ff);
 }
 
 .card h3 {
     display: flex;
     flex-direction:row;
+    justify-content: flex-start;
     padding-left: 20px;
     padding-top: 15px;
     padding-bottom: 10px;
-    gap: 10px;
+    gap: 15px;
 
     font-family: var(--ff);
     color: aqua;
-    
+    font-size: 15px;
 }
 
 .card span{
     padding-left: 30px;
     font-family: var(--ff);
     color: grey;
+
+    font-size: 15px;
 }
 
-hr {
+span img{
+    max-width: 15px;
+    max-height:12px;
+    margin-right: 3px; 
+}
+
+.line {
+
+    margin-top: 5px;
+
     border: 0;
-    border-top: 2px solid grey;
+    border-top: 1px solid rgba(155, 155, 155, 0.61);
     height: 2px;
-    width: 200px;
+    width: 260px;
+    margin-left: 20px;
     
 }
 
 footer img { 
+    border:1px solid white;
+    border-radius: 20px;
+    /* max-width: auto; */
+    max-height: 30px; 
 }
 
 footer {
-    height: 10vh;
-    padding-left: 20px;
+    /* height: 10vh; */
+    padding-left: 20px; 
     padding-top: 15px;
     
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    font-family: var(--ff);
+    color: var(--SoftBlue);
 }
 
+
+
+a {
+    color: white;
+    margin-left: 5px;
+    text-decoration: none;
+    font-family: var(--ff);
+}
